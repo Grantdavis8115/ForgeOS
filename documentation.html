@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | ForgeOS</title>
+    <meta name="description" content="ForgeOS documentation — installation, dual boot, virtualization, packages, and troubleshooting." />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="documentation.html">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="ForgeOS" class="brand-logo" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="download.html">Download</a>
+          <a href="account.html">Forge Account</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="packages.html">Packages</a>
+          <a href="developers.html">Developers</a>
+          <a href="community.html">Community</a>
+          <a href="blog.html">Blog</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary btn-sm" href="download.html">Download</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <div class="container">
+          <form class="search-form" role="search">
+            <input type="search" placeholder="Search ForgeOS documentation..." aria-label="Search ForgeOS documentation" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main container">
+      <div class="page-hero">
+        <p class="eyebrow">Documentation</p>
+        <h1>ForgeOS guides</h1>
+        <p>Everything you need to install, configure, and maintain ForgeOS.</p>
+      </div>
+
+      <div class="doc-layout">
+        <aside class="doc-sidebar" aria-label="Documentation sections">
+          <a href="#installing">Installing ForgeOS</a>
+          <a href="#dual-boot">Dual Boot</a>
+          <a href="#virtualbox">VirtualBox</a>
+          <a href="#vmware">VMware</a>
+          <a href="#updating">Updating ForgeOS</a>
+          <a href="#packages">Installing Packages</a>
+          <a href="#terminal">Terminal Commands</a>
+          <a href="#troubleshooting">Troubleshooting</a>
+        </aside>
+
+        <article class="doc-content">
+          <section id="installing" data-doc-section>
+            <h2>Installing ForgeOS</h2>
+            <p>
+              Download the ISO from the <a href="download.html">Download</a> page, verify the SHA256
+              checksum, then create bootable media with Etcher, Rufus, or <code>dd</code>.
+            </p>
+            <ol>
+              <li>Boot from USB or DVD</li>
+              <li>Select “Install ForgeOS” from the live environment</li>
+              <li>Partition disk and create a user account</li>
+              <li>Reboot and remove installation media</li>
+            </ol>
+          </section>
+
+          <section id="dual-boot" data-doc-section>
+            <h2>Dual Boot</h2>
+            <p>
+              Reserve a separate partition for ForgeOS. Disable Fast Startup on Windows, shrink an
+              existing volume, and install the bootloader to the EFI system partition when prompted.
+            </p>
+          </section>
+
+          <section id="virtualbox" data-doc-section>
+            <h2>VirtualBox</h2>
+            <p>
+              Create a new VM with 4 GB RAM, 2 CPU cores, and a 40 GB virtual disk. Enable EFI if
+              your host supports it. Attach the ForgeOS ISO and install as you would on bare metal.
+            </p>
+          </section>
+
+          <section id="vmware" data-doc-section>
+            <h2>VMware</h2>
+            <p>
+              Use “Create a New Virtual Machine”, select the ISO, and choose Linux &gt; Ubuntu 64-bit.
+              Allocate at least 4 GB RAM and enable 3D acceleration for the GNOME desktop.
+            </p>
+          </section>
+
+          <section id="updating" data-doc-section>
+            <h2>Updating ForgeOS</h2>
+            <p>Apply system updates from Settings or the terminal:</p>
+            <pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y</code></pre>
+          </section>
+
+          <section id="packages" data-doc-section>
+            <h2>Installing Packages</h2>
+            <p>
+              Browse the <a href="packages.html">Packages</a> catalog or use the package manager:
+            </p>
+            <pre><code>sudo apt install firefox</code></pre>
+          </section>
+
+          <section id="terminal" data-doc-section>
+            <h2>Terminal Commands</h2>
+            <ul>
+              <li><code>forge-update</code> — check for ForgeOS-specific updates</li>
+              <li><code>forge-security-scan</code> — run a quick security audit</li>
+              <li><code>systemctl status</code> — inspect system services</li>
+            </ul>
+          </section>
+
+          <section id="troubleshooting" data-doc-section>
+            <h2>Troubleshooting</h2>
+            <p>
+              If the system fails to boot, try recovery mode from GRUB. For display issues, boot
+              with <code>nomodeset</code>. Visit <a href="support.html">Support</a> to report bugs or
+              contact the team.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="ForgeOS" />
+          <p>Modern security OS with a polished desktop experience.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <a href="index.html">About</a>
+          <a href="support.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="documentation.html">Documentation</a>
+          <a href="download.html">Download</a>
+          <a href="developers.html">Developers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="support.html">Privacy</a>
+          <a href="support.html">Terms</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 ForgeOS Project</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForgeOS | Official Website</title>
+    <meta
+      name="description"
+      content="ForgeOS official website — download the latest release, explore features, packages, documentation, and community."
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <img src="assets/forgelogo.png" alt="ForgeOS" class="brand-logo" />
+          <span>ForgeOS</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#download">Download</a>
+          <a href="#features">Features</a>
+          <a href="#packages">Packages</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#developers">Developers</a>
+          <a href="#community">Community</a>
+          <a href="#blog">Blog</a>
+          <a href="#support">Support</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button id="login-btn" class="button secondary">Sign in</button>
+          <button id="logout-btn" class="button secondary" hidden>Sign out</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section animate-on-scroll" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Official ForgeOS website</p>
+            <h1>ForgeOS</h1>
+            <p class="hero-terminal"><span class="typing-text">[ user@forgeos ~ ]$ boot --fast --secure</span></p>
+            <p class="hero-text">
+              Forged for the future — modern, secure, and powerful. Discover the polished
+              operating system experience for desktop, development, and community.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#download">Download ForgeOS</a>
+              <a class="button secondary" href="#documentation">View Documentation</a>
+            </div>
+            <div class="hero-pill-group">
+              <span class="pill">Modern UI</span>
+              <span class="pill">Secure by Design</span>
+              <span class="pill">Package Manager</span>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="hero-panel-card">
+              <p class="eyebrow">Latest Release</p>
+              <h2>ForgeOS 1.0</h2>
+              <ul class="release-list">
+                <li>✓ Faster boot</li>
+                <li>✓ macOS-inspired desktop</li>
+                <li>✓ Security toolkit</li>
+                <li>✓ New package manager</li>
+              </ul>
+              <div class="hero-panel-actions">
+                <a class="button primary" href="#download">Download Now</a>
+                <a class="button secondary" href="#documentation">Documentation</a>
+              </div>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <span>Modern.</span>
+                <strong>Built for creators</strong>
+              </div>
+              <div class="stat-card">
+                <span>Secure.</span>
+                <strong>Privacy-first defaults</strong>
+              </div>
+              <div class="stat-card">
+                <span>Powerful.</span>
+                <strong>Scale with packages</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-split animate-on-scroll" id="features">
+          <div class="feature-summary">
+            <div class="section-heading">
+              <p class="eyebrow">Features</p>
+              <h2>ForgeOS highlights</h2>
+              <p>
+                Minimal and clean, with smooth motion, rounded glass surfaces, and crisp typography.
+              </p>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>🧰 Custom ForgeOS installer</h3>
+                <p>A guided ForgeOS installer inspired by Calamares, with a polished setup flow for fresh installs and upgrades.</p>
+              </article>
+              <article class="feature-card">
+                <h3>🎨 Custom desktop theme</h3>
+                <p>A bespoke ForgeOS theme with graphite surfaces, glass panels, and a refined macOS-inspired desktop.</p>
+              </article>
+              <article class="feature-card">
+                <h3>💿 Custom boot splash</h3>
+                <p>Integrated Plymouth branding for a signature ForgeOS boot experience from power-on to login.</p>
+              </article>
+              <article class="feature-card">
+                <h3>🛍 ForgeOS app store</h3>
+                <p>A complete application store with Microsoft Store apps, Apple Store apps, and ForgeOS-native tools.</p>
+              </article>
+              <article class="feature-card">
+                <h3>🔄 Automatic updates</h3>
+                <p>Secure background updates keep the OS, apps, and security tools current without interrupting your workflow.</p>
+              </article>
+              <article class="feature-card">
+                <h3>🔐 Expanded security tools</h3>
+                <p>Additional security tooling, hardening presets, and a built-in dashboard for daily protection.</p>
+              </article>
+              <article class="feature-card">
+                <h3>🖥 Custom desktop shell</h3>
+                <p>A ForgeOS shell with a refined launcher, dock, and terminal experience tailored to power users.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="desktop-preview">
+            <div class="preview-heading">
+              <p class="eyebrow">Desktop Preview</p>
+              <h2>See ForgeOS in motion</h2>
+            </div>
+            <div class="preview-carousel" role="tablist" aria-label="Desktop preview options">
+              <button class="preview-thumb active" data-image="Desktop" type="button">Desktop</button>
+              <button class="preview-thumb" data-image="Applications" type="button">Applications</button>
+              <button class="preview-thumb" data-image="Settings" type="button">Settings</button>
+              <button class="preview-thumb" data-image="Terminal" type="button">Terminal</button>
+              <button class="preview-thumb" data-image="Package Manager" type="button">Package Manager</button>
+              <button class="preview-thumb" data-image="File Manager" type="button">File Manager</button>
+            </div>
+            <div class="preview-panel" id="preview-panel" role="img" aria-label="Desktop preview screenshot"></div>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="download">
+          <div class="download-panel">
+            <div class="section-heading">
+              <p class="eyebrow">Download Center</p>
+              <h2>ForgeOS release channels</h2>
+              <p>Choose the release channel that matches your workflow, from stable to developer preview.</p>
+            </div>
+            <div class="download-grid">
+              <article class="download-card">
+                <p class="eyebrow">ForgeOS 1.0</p>
+                <strong>Stable</strong>
+                <p class="download-copy">Recommended for most users.</p>
+                <ul class="download-meta">
+                  <li><strong>File Size</strong> 2.4 GB</li>
+                  <li><strong>SHA256</strong> 6e4b3f1a...c9f2</li>
+                  <li><strong>Release Notes</strong> Included</li>
+                  <li><strong>Minimum</strong> 4 GB RAM, 20 GB disk</li>
+                  <li><strong>Recommended</strong> 8 GB RAM, 40 GB disk</li>
+                </ul>
+                <a class="button primary" href="#">Download ISO</a>
+              </article>
+              <article class="download-card">
+                <p class="eyebrow">ForgeOS Beta</p>
+                <strong>Beta</strong>
+                <p class="download-copy">Early access for testers.</p>
+                <a class="button secondary" href="#">Download Beta</a>
+              </article>
+              <article class="download-card">
+                <p class="eyebrow">Nightly Builds</p>
+                <strong>Nightly</strong>
+                <p class="download-copy">Latest development snapshots.</p>
+                <a class="button secondary" href="#">Download Nightly</a>
+              </article>
+              <article class="download-card">
+                <p class="eyebrow">Developer Preview</p>
+                <strong>Preview</strong>
+                <p class="download-copy">Build with the newest developer tools.</p>
+                <a class="button secondary" href="#">Download Preview</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="packages">
+          <div class="section-heading">
+            <p class="eyebrow">Forge App Store</p>
+            <h2>Launch apps from Microsoft Store, Apple Store, and ForgeOS</h2>
+            <p>Every app in the store is pre-validated, fully functional, and ready to run in the ForgeOS environment.</p>
+          </div>
+          <div class="package-toolbar">
+            <div class="package-search">
+              <input id="package-search" type="search" placeholder="Search apps" aria-label="Search apps" />
+            </div>
+            <div class="package-filters" role="group" aria-label="Package categories">
+              <button class="filter-chip active" data-category="all" type="button">All</button>
+              <button class="filter-chip" data-category="microsoft" type="button">Microsoft Store</button>
+              <button class="filter-chip" data-category="apple" type="button">Apple Store</button>
+              <button class="filter-chip" data-category="forge" type="button">ForgeOS</button>
+            </div>
+          </div>
+          <div class="package-grid" id="package-grid">
+            <article class="package-card" data-category="microsoft">
+              <div class="package-card-head">
+                <h3>Microsoft Edge</h3>
+                <span class="store-badge">Microsoft Store</span>
+              </div>
+              <p class="package-meta">Browser • v131.0 • 180 MB</p>
+              <p>Fast, secure browsing with ForgeOS identity sync and privacy controls.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+            <article class="package-card" data-category="microsoft">
+              <div class="package-card-head">
+                <h3>Microsoft Teams</h3>
+                <span class="store-badge">Microsoft Store</span>
+              </div>
+              <p class="package-meta">Collaboration • v2503 • 160 MB</p>
+              <p>Meetings, chat, and shared workspaces built for the ForgeOS desktop.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+            <article class="package-card" data-category="apple">
+              <div class="package-card-head">
+                <h3>Apple Music</h3>
+                <span class="store-badge">Apple Store</span>
+              </div>
+              <p class="package-meta">Media • v5.0 • 140 MB</p>
+              <p>Stream, organize, and enjoy your music library with a polished ForgeOS interface.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+            <article class="package-card" data-category="apple">
+              <div class="package-card-head">
+                <h3>Keynote</h3>
+                <span class="store-badge">Apple Store</span>
+              </div>
+              <p class="package-meta">Presentation • v13.2 • 210 MB</p>
+              <p>Create polished slides, visuals, and presentations with intuitive ForgeOS integration.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+            <article class="package-card" data-category="forge">
+              <div class="package-card-head">
+                <h3>Forge Terminal</h3>
+                <span class="store-badge">ForgeOS</span>
+              </div>
+              <p class="package-meta">Developer Tool • v4.1 • 32 MB</p>
+              <p>Powerful command-line workflows with shell customization and instant launch.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+            <article class="package-card" data-category="forge">
+              <div class="package-card-head">
+                <h3>Forge Secure</h3>
+                <span class="store-badge">ForgeOS</span>
+              </div>
+              <p class="package-meta">Security • v2.5 • 48 MB</p>
+              <p>Monitor logs, enable protection, and manage automatic updates from one place.</p>
+              <div class="package-actions">
+                <span class="runtime-status">Ready</span>
+                <button class="button secondary install-btn" type="button">Launch</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="account">
+          <div class="section-heading">
+            <p class="eyebrow">Forge Account</p>
+            <h2>Modern dashboard experience</h2>
+            <p>Manage devices, security, downloads, and settings from one polished dashboard.</p>
+          </div>
+          <div class="account-grid">
+            <div class="account-card welcome-card" id="account-welcome" hidden>
+              <div class="account-card-header">
+                <span class="eyebrow">Welcome</span>
+                <h3 id="account-username">Grant Davis</h3>
+              </div>
+              <div class="account-list">
+                <article>
+                  <strong>Devices</strong>
+                  <p>Desktop · Laptop · Virtual Machine</p>
+                </article>
+                <article>
+                  <strong>Security</strong>
+                  <p>Password · 2FA · Recovery Codes</p>
+                </article>
+                <article>
+                  <strong>Downloads</strong>
+                  <p>License · Settings · Latest ISOs</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="account-card form-card" id="account-form-card">
+              <div class="account-form-switch">
+                <button id="register-tab" class="tab active" type="button">Create account</button>
+                <button id="login-tab" class="tab" type="button">Log in</button>
+              </div>
+              <form id="account-form" class="account-form">
+                <p class="eyebrow" id="account-form-eyebrow">Create your Forge Account</p>
+                <h3 id="account-form-title">Sign up for Forge Account</h3>
+                <div class="field-group" id="name-field">
+                  <label>
+                    Full name
+                    <input type="text" name="fullName" placeholder="Alex Morgan" />
+                  </label>
+                </div>
+                <label>
+                  Email address
+                  <input type="email" name="email" placeholder="alex@forgeos.dev" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" placeholder="Enter your password" required />
+                </label>
+                <div class="form-actions">
+                  <button class="button primary full" type="submit" id="account-submit">Create account</button>
+                </div>
+                <p class="form-footnote">Signed in users see a dashboard, device summary, and security overview.</p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="documentation">
+          <div class="doc-shell">
+            <aside class="doc-nav" id="doc-nav">
+              <p class="eyebrow">Documentation</p>
+              <ul>
+                <li><button class="doc-link active" data-article="installation" type="button">Installation</button></li>
+                <li><button class="doc-link" data-article="getting-started" type="button">Getting Started</button></li>
+                <li><button class="doc-link" data-article="updates" type="button">Updates</button></li>
+                <li><button class="doc-link" data-article="terminal" type="button">Terminal</button></li>
+                <li><button class="doc-link" data-article="package-manager" type="button">Package Manager</button></li>
+                <li><button class="doc-link" data-article="networking" type="button">Networking</button></li>
+                <li><button class="doc-link" data-article="customization" type="button">Customization</button></li>
+                <li><button class="doc-link" data-article="troubleshooting" type="button">Troubleshooting</button></li>
+              </ul>
+            </aside>
+            <article class="doc-content" id="doc-content">
+              <p class="eyebrow">Installation</p>
+              <h2>Install ForgeOS</h2>
+              <p>
+                Download the latest ForgeOS image, verify the SHA256 checksum, and follow the guided installation steps for desktop and virtual machines.
+              </p>
+              <h3>Minimum requirements</h3>
+              <ul>
+                <li>4 GB RAM</li>
+                <li>20 GB storage</li>
+                <li>UEFI or legacy boot support</li>
+              </ul>
+              <h3>Getting ready</h3>
+              <p>Create a bootable USB, back up your files, and choose the ForgeOS stable image for the most polished experience.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="developers">
+          <div class="section-heading">
+            <p class="eyebrow">Developers</p>
+            <h2>Build and contribute</h2>
+            <p>Explore resources for coding, issue tracking, and developer tooling.</p>
+          </div>
+          <div class="developer-grid">
+            <article class="developer-card">
+              <h3>Contribute</h3>
+              <p>Start with GitHub, review coding standards, and join the ForgeOS community.</p>
+            </article>
+            <article class="developer-card">
+              <h3>Roadmap</h3>
+              <p>See planned features, development milestones, and preview builds.</p>
+            </article>
+            <article class="developer-card">
+              <h3>API Docs</h3>
+              <p>Use the ForgeOS SDK, packaging API, and integration guides.</p>
+            </article>
+            <article class="developer-card">
+              <h3>Pull Requests</h3>
+              <p>Track issues, submit patches, and collaborate on the next release.</p>
+            </article>
+          </div>
+          <div class="developer-links">
+            <a class="link-panel" href="#">Development Builds</a>
+            <a class="link-panel" href="#">SDK</a>
+            <a class="link-panel" href="#">Kernel Source</a>
+            <a class="link-panel" href="#">Desktop Environment</a>
+            <a class="link-panel" href="#">Developer Blog</a>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="community">
+          <div class="section-heading">
+            <p class="eyebrow">Community</p>
+            <h2>ForgeOS community spaces</h2>
+            <p>Join Discord, GitHub Discussions, forums, Matrix, and live events.</p>
+          </div>
+          <div class="community-grid">
+            <article class="community-card"><h3>Discord</h3></article>
+            <article class="community-card"><h3>GitHub Discussions</h3></article>
+            <article class="community-card"><h3>Forum</h3></article>
+            <article class="community-card"><h3>Matrix</h3></article>
+            <article class="community-card"><h3>Events</h3></article>
+            <article class="community-card"><h3>Showcase</h3></article>
+          </div>
+          <div class="community-gallery">
+            <div class="gallery-item" data-image="Desktop">Desktop</div>
+            <div class="gallery-item" data-image="Wallpaper Gallery">Wallpaper gallery</div>
+            <div class="gallery-item" data-image="Custom Desktop">Desktop customizations</div>
+            <div class="gallery-item" data-image="Terminal">Terminal</div>
+            <div class="gallery-item" data-image="Package Manager">Package Manager</div>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="blog">
+          <div class="section-heading">
+            <p class="eyebrow">Blog</p>
+            <h2>Latest updates</h2>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <h3>ForgeOS 1.0 Released</h3>
+              <p>Read →</p>
+            </article>
+            <article class="blog-card">
+              <h3>Security Improvements</h3>
+              <p>Read →</p>
+            </article>
+            <article class="blog-card">
+              <h3>Desktop Redesign</h3>
+              <p>Read →</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="support">
+          <div class="section-heading">
+            <p class="eyebrow">Support</p>
+            <h2>Need help?</h2>
+            <p>Answers for installation, bugs, and account support.</p>
+          </div>
+          <div class="support-grid">
+            <article class="support-card"><h3>Frequently Asked Questions</h3></article>
+            <article class="support-card"><h3>Installation Help</h3></article>
+            <article class="support-card"><h3>Known Issues</h3></article>
+            <article class="support-card"><h3>Bug Reports</h3></article>
+            <article class="support-card"><h3>Contact</h3></article>
+            <article class="support-card"><h3>Status</h3></article>
+          </div>
+        </section>
+
+        <section class="section section-about animate-on-scroll" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>ForgeOS mission</h2>
+            <p>Open source, polished, and built to move desktop computing forward.</p>
+          </div>
+          <div class="about-grid">
+            <article class="about-card"><strong>Our Mission</strong><p>Deliver a modern operating system with elegant tooling and strong security.</p></article>
+            <article class="about-card"><strong>Why ForgeOS exists</strong><p>To create an operating system that feels premium yet remains accessible.</p></article>
+            <article class="about-card"><strong>Our Goals</strong><p>Improve performance, documentation, and community collaboration.</p></article>
+            <article class="about-card"><strong>Open Source</strong><p>ForgeOS is built with community contributions and transparent development.</p></article>
+            <article class="about-card"><strong>Contributors</strong><p>Engineers, designers, and maintainers working together.</p></article>
+            <article class="about-card"><strong>License</strong><p>Designed for open development, sharing, and safe distribution.</p></article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ForgeOS · polished OS experience for desktop, developers, and community.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" fill="#0c1424"/>
+  <rect x="40" y="40" width="1200" height="720" rx="16" fill="#152238" stroke="#2a3f5f"/>
+  <rect x="80" y="680" width="1120" height="56" rx="28" fill="#1a2d4a"/>
+  <circle cx="640" cy="708" r="20" fill="#5b9dff"/>
+  <text x="640" y="420" fill="#9aa8c4" font-family="Segoe UI,sans-serif" font-size="28" text-anchor="middle">Dock &amp; Launcher</text>
+</svg>

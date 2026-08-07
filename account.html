@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forge Account | ForgeOS</title>
+    <meta name="description" content="Create a Forge Account to sign in to ForgeOS, manage devices, and enable two-factor authentication." />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="account.html">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="ForgeOS" class="brand-logo" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="download.html">Download</a>
+          <a href="account.html">Forge Account</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="packages.html">Packages</a>
+          <a href="developers.html">Developers</a>
+          <a href="community.html">Community</a>
+          <a href="blog.html">Blog</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary btn-sm" href="download.html">Download</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <div class="container">
+          <form class="search-form" role="search">
+            <input type="search" placeholder="Search ForgeOS documentation..." aria-label="Search ForgeOS documentation" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main container">
+      <div class="page-hero">
+        <p class="eyebrow">Forge Account</p>
+        <h1>Your identity for ForgeOS</h1>
+        <p>Sign up, sign in, and manage your profile, devices, and security settings.</p>
+      </div>
+
+      <div class="account-grid">
+        <section class="card form-card">
+          <h2>Sign up</h2>
+          <form id="signup-form">
+            <label>
+              Full name
+              <input type="text" name="fullName" placeholder="Alex Morgan" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="alex@forgeos.dev" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" placeholder="Create a strong password" required />
+            </label>
+            <label>
+              Country / region
+              <input type="text" name="region" placeholder="United States" required />
+            </label>
+            <button class="btn btn-primary full" type="submit">Create account</button>
+          </form>
+        </section>
+
+        <section class="card form-card">
+          <h2>Log in</h2>
+          <form id="login-form">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@domain.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" required />
+            </label>
+            <button class="btn btn-primary full" type="submit">Sign in</button>
+          </form>
+
+          <h2 style="margin-top: 28px">Reset password</h2>
+          <form id="reset-form">
+            <label>
+              Account email
+              <input type="email" name="email" placeholder="you@domain.com" required />
+            </label>
+            <button class="btn btn-secondary full" type="submit">Send reset link</button>
+          </form>
+        </section>
+      </div>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Account management</h2>
+          <p>Available after signing in to your Forge Account.</p>
+        </div>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Profile &amp; security</h3>
+            <ul>
+              <li>Edit profile and display name</li>
+              <li>Change password</li>
+              <li>Enable two-factor authentication</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Devices</h3>
+            <ul>
+              <li>Manage devices linked to ForgeOS</li>
+              <li>Review active sessions</li>
+              <li>Remote sign-out from lost hardware</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="ForgeOS" />
+          <p>Modern security OS with a polished desktop experience.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <a href="index.html">About</a>
+          <a href="support.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="documentation.html">Documentation</a>
+          <a href="download.html">Download</a>
+          <a href="developers.html">Developers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="support.html">Privacy</a>
+          <a href="support.html">Terms</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 ForgeOS Project</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
